@@ -16,6 +16,11 @@ const Aside = styled.aside`
   & article:last-child {
     border-bottom: none;
   }
+
+  @media (min-width: 768px) {
+    grid-column: span 4 / span 4;
+    grid-row: span 1 / span 1;
+  }
 `
 
 export default Aside

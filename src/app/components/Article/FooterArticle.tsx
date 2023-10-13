@@ -29,6 +29,10 @@ const FooterArticle = styled.article`
     color: ${({ theme }) => theme.colors.darkGrayishBlue};
     line-height: 1.5rem;
   }
+
+  @media (min-width: 768px) {
+    grid-column: span 4 / span 4;
+  }
 `
 
 export default FooterArticle

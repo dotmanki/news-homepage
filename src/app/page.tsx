@@ -11,19 +11,23 @@ import Article from './components/Article/Article'
 import Footer from './components/Footer/Footer'
 import FooterArticle from './components/Article/FooterArticle'
 import Image from 'next/image'
+import NavBar from './components/NavBar/NavBar'
 
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
+      <NavBar />
       <Main>
         <Hero />
         <Display>The Bright Future of Web 3.0?</Display>
-        <Paragraph>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </Paragraph>
-        <Button>Read more</Button>
+        <div className='container'>
+          <Paragraph>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </Paragraph>
+          <Button>Read more</Button>
+        </div>
       </Main>
       <Aside>
         <h3>New</h3>

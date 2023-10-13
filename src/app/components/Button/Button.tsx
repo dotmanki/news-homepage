@@ -11,6 +11,10 @@ const Button = styled.button`
   width: 11rem;
   height: 3rem;
   margin: 0.5rem 0;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 `
 
 export default Button
