@@ -10,6 +10,15 @@ const Article = styled.article`
     font-size: 1.25rem;
   }
 
+  & h4 a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.softOrange};
+    }
+  }
+
   & p {
     padding: 1rem 0;
     font-weight: 400;

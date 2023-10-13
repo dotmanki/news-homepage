@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer'
 import FooterArticle from './components/Article/FooterArticle'
 import Image from 'next/image'
 import NavBar from './components/NavBar/NavBar'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -32,18 +33,24 @@ export default function Home() {
       <Aside>
         <h3>New</h3>
         <Article>
-          <h4>Hydrogen VS Electric Cars</h4>
+          <h4>
+            <Link href='#'>Hydrogen VS Electric Cars</Link>
+          </h4>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         </Article>
         <Article>
-          <h4>The Downsides of AI Artistry</h4>
+          <h4>
+            <Link href='#'>The Downsides of AI Artistry</Link>
+          </h4>
           <p>
             What are the possible adverse effects of on-demand AI image
             generation?
           </p>
         </Article>
         <Article>
-          <h4>Is VC Funding Drying Up?</h4>
+          <h4>
+            <Link href='#'>Is VC Funding Drying Up?</Link>
+          </h4>
           <p>
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
@@ -60,7 +67,9 @@ export default function Home() {
           />
           <div>
             <h3>01</h3>
-            <h4>Reviving Retro PCs</h4>
+            <h4>
+              <Link href='#'>Reviving Retro PCs</Link>
+            </h4>
             <p>What happens when old PCs are given modern upgrades?</p>
           </div>
         </FooterArticle>
@@ -73,7 +82,9 @@ export default function Home() {
           />
           <div>
             <h3>02</h3>
-            <h4>Top 10 Laptops of 2022</h4>
+            <h4>
+              <Link href='#'>Top 10 Laptops of 2022</Link>
+            </h4>
             <p>Our best picks for various needs and budgets.</p>
           </div>
         </FooterArticle>
@@ -86,7 +97,9 @@ export default function Home() {
           />
           <div>
             <h3>03</h3>
-            <h4>The Growth of Gaming</h4>
+            <h4>
+              <Link href='#'>The Growth of Gaming</Link>
+            </h4>
             <p>How the pandemic has sparked fresh opportunities.</p>
           </div>
         </FooterArticle>

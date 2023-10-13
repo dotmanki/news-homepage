@@ -23,6 +23,15 @@ const FooterArticle = styled.article`
     font-weight: 800;
   }
 
+  & h4 a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.softRed};
+    }
+  }
+
   & p {
     font-weight: 400;
     font-size: 1rem;

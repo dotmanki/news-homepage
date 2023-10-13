@@ -9,7 +9,7 @@ const Aside = styled.aside`
 
   & h3 {
     font-size: 2rem;
-    color: ${({ theme }) => theme.colors.softYellow};
+    color: ${({ theme }) => theme.colors.softOrange};
     margin-bottom: 1rem;
   }
 

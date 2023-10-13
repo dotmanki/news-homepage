@@ -46,6 +46,10 @@ const Ul = styled.ul`
   & > li > a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.darkGrayishBlue};
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.softRed};
+    }
   }
 
   @media (min-width: 768px) {

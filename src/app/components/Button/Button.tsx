@@ -11,6 +11,11 @@ const Button = styled.button`
   width: 11rem;
   height: 3rem;
   margin: 0.5rem 0;
+  cursor: pointer;
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.veryDarkBlue};
+  }
 
   @media (min-width: 768px) {
     margin: 0;
