@@ -14,10 +14,12 @@ import Image from 'next/image'
 import NavBar from './components/NavBar/NavBar'
 import Link from 'next/link'
 import Menu from './components/Menu/Menu'
+import { GlobalStyles } from './utils/GlobalStyles'
 
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <NavBar />
       <Main>
         <Hero />

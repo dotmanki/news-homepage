@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     padding: 1rem;
+    background-color: ${({ theme }) => theme.colors.offWhite}
   }
 
   @media (min-width: 768px) {
