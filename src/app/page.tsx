@@ -13,6 +13,7 @@ import FooterArticle from './components/Article/FooterArticle'
 import Image from 'next/image'
 import NavBar from './components/NavBar/NavBar'
 import Link from 'next/link'
+import Menu from './components/Menu/Menu'
 
 export default function Home() {
   return (
@@ -104,6 +105,7 @@ export default function Home() {
           </div>
         </FooterArticle>
       </Footer>
+      <Menu />
     </ThemeProvider>
   )
 }

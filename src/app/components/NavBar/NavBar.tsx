@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image'
+import { useNav } from '@/app/hooks/useNav'
 import Link from 'next/link'
 import styled from 'styled-components'
 
@@ -28,11 +28,12 @@ const Logo = styled.div`
   }
 `
 
-const Menu = styled.div`
+const Menu = styled.button`
   width: 40px;
   height: 17px;
   background-image: url('/icon-menu.svg');
   background-size: cover;
+  border: none;
 
   @media (min-width: 768px) {
     display: none;
@@ -61,10 +62,11 @@ const Ul = styled.ul`
 `
 
 const NavBar = () => {
+  const { toggleMenu } = useNav()
   return (
     <StyledNavBar>
       <Logo />
-      <Menu />
+      <Menu onClick={toggleMenu} />
       <Ul>
         <li>
           <Link href='#home'>Home</Link>
